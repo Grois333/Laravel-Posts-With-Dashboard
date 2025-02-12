@@ -22,5 +22,5 @@
 <div class="flex justify-between items-center">
     <a href="{{ route('posts.index') }}" class="text-indigo-600">Back</a>
 
-    <input type="submit" value="Send" class="bg-gray-800 text-white rounded px-4 py-2">
+    <input type="submit" value="Send" class="bg-gray-800 text-white rounded px-4 py-2 cursor-pointer">
 </div>
