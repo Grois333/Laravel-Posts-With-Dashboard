@@ -1,3 +1,62 @@
+# Laravel 9 CRUD App with Dashboard
+
+This is a Laravel 9 CRUD application that allows users to manage posts with a simple dashboard. It includes pagination, a single post view, and a search functionality. Authorized users can create, edit, and delete posts via the dashboard.
+
+## Features
+
+- ✅ **CRUD Operations**: Create, Read, Update, and Delete posts
+- 🔍 **Search Functionality**: Easily search for posts
+- 📄 **Pagination**: Browse posts with pagination
+- 🔑 **Authentication**: Secure dashboard for authorized users
+- 🖥 **Dashboard**: Manage posts from an admin panel
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to the project directory
+cd laravel-crud-app
+
+# Install dependencies
+composer install
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Configure database in .env file
+
+# Run migrations
+php artisan migrate --seed
+
+# Serve the application
+php artisan serve
+```
+
+## Usage
+
+1. Authorized users can access the dashboard.
+2. Create, edit, or delete posts from the dashboard.
+3. View posts on the home page with pagination.
+4. Use the search bar to find specific posts.
+
+## Demo Video
+
+Watch the video walkthrough of the app:
+[![Watch Video](https://img.youtube.com/vi/506858896a2848c280ffce6e53382b98/0.jpg)](https://www.loom.com/share/506858896a2848c280ffce6e53382b98)
+
+## Screenshot
+
+![App Screenshot](featured-image.png)
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
