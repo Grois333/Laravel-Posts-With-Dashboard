@@ -2,6 +2,11 @@
 
 This is a Laravel 9 CRUD application that allows users to manage posts with a simple dashboard. It includes pagination, a single post view, and a search functionality. Authorized users can create, edit, and delete posts via the dashboard.
 
+## Screenshot
+
+![App Screenshot](featured-image.png)
+
+
 ## Features
 
 - ✅ **CRUD Operations**: Create, Read, Update, and Delete posts
@@ -49,11 +54,8 @@ php artisan serve
 ## Demo Video
 
 Watch the video walkthrough of the app:
-[![Watch Video](https://img.youtube.com/vi/506858896a2848c280ffce6e53382b98/0.jpg)](https://www.loom.com/share/506858896a2848c280ffce6e53382b98)
+https://www.loom.com/share/506858896a2848c280ffce6e53382b98
 
-## Screenshot
-
-![App Screenshot](featured-image.png)
 
 
 
