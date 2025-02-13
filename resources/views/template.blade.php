@@ -15,11 +15,31 @@
 				<a href="{{ route('home') }}">
 					<img src="{{ asset('images/logo.png') }}" class="h-12">
 				</a>
-				<form action="{{ route('home') }}" class="flex-grow" method="GET">
-				    <input type="text" name="search" placeholder="Search" value="{{ request('search') }}" 
-				    class="border border-gray-200 rounded py-2 px-4 w-1/2"
-				    >
+				<form action="{{ route('home') }}" class="flex-grow relative flex items-center" method="GET">
+					<!-- Search Input -->
+					<input 
+						type="text" 
+						name="search" 
+						placeholder="Search" 
+						value="{{ request('search') }}" 
+						class="border border-gray-200 rounded py-2 px-4 w-1/2"
+						id="searchInput"
+					>
+				
+					<!-- Clear "X" Button (Only shows when there's input) -->
+					@if(request('search'))
+						<button type="button" onclick="clearSearch()" 
+							class="relative right-[20px] top-[10px] transform -translate-y-1/2 text-gray-500 hover:text-gray-700">
+							&times;
+						</button>
+					@endif
+				
+					<!-- Search Button -->
+					<button type="submit" class="ml-2 bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">
+						Search
+					</button>
 				</form>
+				
 			</div>
 
 			@auth
@@ -46,5 +66,15 @@
 			<img src="{{ asset('images/logo.png') }}" class="h-12 mx-auto">
 		</p>
 	</div>
+
+	<script>
+		function clearSearch() {
+			document.getElementById('searchInput').value = ''; // Clear input
+			window.location.href = "{{ route('home') }}"; // Redirect to remove search param
+		}
+	</script>
+	
+	
+
 </body>
 </html>
