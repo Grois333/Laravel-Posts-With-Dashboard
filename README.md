@@ -4,7 +4,7 @@ This is a Laravel 9 CRUD application that allows users to manage posts with a si
 
 ## Screenshot
 
-![App Screenshot]([featured-image.png](https://raw.githubusercontent.com/Grois333/Laravel-Posts-With-Dashboard/refs/heads/master/resources/img/laravel9.png))
+![App Screenshot](https://raw.githubusercontent.com/Grois333/Laravel-Posts-With-Dashboard/refs/heads/master/resources/img/laravel9.png)
 
 
 ## Features
